@@ -7,8 +7,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>aaasdadsa</h1>
-    <h1>aaasdadsa</h1>
-    <script src="./libroDescripcion.js"></script>
+    <div class="container">
+
+        <div class="description-container">
+
+            <div class="description-container-title">
+            <h1>Insert Recipe</h1>
+            </div>
+
+            <div class="description-container-list">
+            <h2>Please fill out the information required below:</h2>
+            <form id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Recipe name" required>
+                <input type="text" id="ingredients" placeholder="Ingredients" required>
+                <input type="text" id="instructions" placeholder="Instructions" required>
+                <input type="text" id="category" placeholder="Category" required>
+                <input type="text" id="image" placeholder="Image URL" required>
+                <input class="add-button" type="submit" value="Add">
+            </form>
+            </div>  
+        
+        </div>
+
+        <div class="list-container">
+
+                <div class="list-container-title">
+                <h1>Recipe list</h1>
+                </div>
+
+                <div id="recipes">
+                </div>
+
+        </div>
+
+    </div>
+
+    <script src="./listaRecetas.js"></script>
 </body>
 </html>
